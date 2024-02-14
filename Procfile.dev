@@ -1,0 +1,2 @@
+sbin/rails server
+js: npm run build --watch

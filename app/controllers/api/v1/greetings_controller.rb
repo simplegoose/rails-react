@@ -1,7 +1,6 @@
 module Api
   module V1
     class GreetingsController < ApplicationController
-
       # Get api/v1/greetings
       def index
         @greetings = Greeting.all

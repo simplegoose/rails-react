@@ -4,9 +4,9 @@ module Api
       # Get api/v1/greetings
       def index
         @greetings = Greeting.all
-        @greetingsCount = Greeting.count
+        greetings_count = Greeting.count
 
-        random_greeting_id = rand(@greetingsCount)
+        random_greeting_id = rand(greetings_count)
 
         render json: @greetings[random_greeting_id], status: :ok
       end
